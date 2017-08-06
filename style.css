@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+}
+/* jumbotron */
+.jumbotron{
+  background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu-toggler {
+  display: none;
+}
+.styleButton {
+  background-color: #10b78b;
+  color: #ffffff;
+}
+.jumbotron i.fa {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 10px;
+}
+.jumbotron-icon {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+}
+.jumbotron li a {
+  color: #ffffff;
+}
+.jumbotron li a:hover {
+  background-color: rgba(178, 69, 90, 0.5);
+}
+.slogan {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* section - photoapp */
+.photoapp {
+  background-color: #f4f2f2;
+  padding: 120px 0;
+}
+/* section - design */
+.design h3, .photoapp h3 {
+  font-weight: bold;
+  color: #10b78b;
+}
+.design img {
+  width: 570px;
+  height: 350px;
+}
+/* section - community */
+.community {
+  background-color: #f4f2f2;
+  padding: 120px 0;
+}
+.community h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.community p {
+  text-align: center;
+}
+.community img {
+  height: 220px;
+  width: 400px
+}
+.item img {
+  max-height: 220px;
+  width: 400px;
+  background-size: cover;
+}
+.mono {
+  width: 400px;
+  height: 200px;
+}
+/* section - subscribe */
+.subscribe {
+  background-image: url("images/subscribe.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.subscribe h3 {
+  font-weight: bold;
+  color: #ffffff;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+.flex-center {
+	align-items: center;
+	justify-content: center;
+}
+/* section - download */
+.download {
+  background-color: #f4f2f2;
+  padding: 90px 0;
+  text-align: center;
+}
+.download i.fa {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.download a {
+  margin: 50px 10px;
+}
+/* footer */
+.footer {
+  font-weight: bold;
+  padding: 50px 0;
+}
+.footer a {
+  color: black;
+}
+.footer i.fa, .community i.fa {
+  font-size: 50px;
+  color: #10b78b;
+  float: right;
+}
+
+@media (max-width:768px) {
+  .menu-toggler {
+   font-size: 20px;
+   background-color: rgba(178, 69, 90, 0.5);
+   border-radius: 5px;
+   border: none;
+   display: inline-block;
+  }
+
+  div ul.active {
+  display: block;
+  background-color: rgba(178, 69, 90, 1);
+  position: relative;
+  z-index: 1;
+  }
+  .jumbotron li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  ul {
+    display: none;
+  }
+
+  .photoapp img, .design img {
+    display: inline-block;
+    text-align: center;
+  }
+  .community, .design, .photoapp {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer span {
+    font-weight: bold;
+    color: #10b78b;
+  }
+  .footer i.fa {
+    display: none;
+  }
+
+}
+@media (max-width: 992px) {
+  .photoapp img, .design img {
+    display: inline-block;
+    text-align: center;
+  }
+  .community, .design, .photoapp {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer i.fa {
+    float: none;
+    margin: 15px 0;
+  }
+  .mono {
+    display: block;
+    float: none;
+    margin: 40px auto 0;
+  }
+}
